@@ -13,12 +13,13 @@
 <body>
 <div id="app">
     <h1>{{name}}</h1>
+    <add-task @add-task="addTask"></add-task>
     <column v-for="(column, index) in columns" :key="index"
             :column="column"
             @done-subtask="doneSubtask"
             @task-half-filled="taskHalfFilled"
             @task-filled-completely="taskFilledCompletely"
-            @column-1-unlock="column1Unlock"
+            @save="saveData"
             :class="{disabled:column.disabled}"
     ></column>
 </div>
