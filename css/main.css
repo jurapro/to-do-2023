@@ -1,0 +1,21 @@
+.done {
+    text-decoration: line-through;
+}
+
+.disabled{
+    pointer-events: none;
+    background-color: darkgrey;
+}
+
+.task {
+    display: flex;
+    gap: 2rem;
+}
+.column {
+    border: black dashed 1px;
+    margin: 2rem;
+    padding: 2rem;
+}
+.subtask {
+    cursor: grab;
+}
